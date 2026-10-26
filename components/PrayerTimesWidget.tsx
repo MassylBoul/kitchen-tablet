@@ -64,11 +64,11 @@ export default function PrayerTimesWidget() {
   }, [currentDay]);
 
   const prayers = [
-    { name: 'Fajr', time: timings?.Fajr, icon: <Moon size={16} className="text-blue-500" /> },
+    { name: 'Fajr', time: timings?.Fajr, icon: <Sunrise size={16} className="text-indigo-500" />  },
     { name: 'Dhuhr', time: timings?.Dhuhr, icon: <Sun size={16} className="text-amber-500" /> },
     { name: 'Asr', time: timings?.Asr, icon: <Sun size={16} className="text-orange-500" /> },
     { name: 'Maghrib', time: timings?.Maghrib, icon: <Sunset size={16} className="text-red-500" /> },
-    { name: 'Isha', time: timings?.Isha, icon: <Sunrise size={16} className="text-indigo-500" /> },
+    { name: 'Isha', time: timings?.Isha, icon: <Moon size={16} className="text-blue-500" />},
   ];
 
   return (
